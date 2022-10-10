@@ -1,6 +1,8 @@
 /* Global Styles */
 :root {
     --primary-color: #e50914;
+    --dark-color: #141414;
+	--light-color: #f4f4f4;
 }
 * {
 	box-sizing: border-box;
@@ -109,6 +111,24 @@ img {
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
+
+/** Tabs **/
+.tabs {
+	background: var(--dark-color);
+	padding-top: 1rem;
+	border-bottom: 3px solid #3d3d3d;
+	border-right: none;
+}
+/** Grid must be placed on the direct parent of the Grid-elements **/
+.tabs .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 
 /** Buttons **/
 .btn {
